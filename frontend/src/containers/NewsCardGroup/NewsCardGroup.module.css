@@ -1,4 +1,6 @@
 .cardDeck {
-    display: flex;
-    padding: 10vh 0vw 10vh 5vw;
+    /* display: flex; */
+    overflow: hidden;
+    padding: 5vh 3vw 5vh 3vw;
+    width: 100%;
 }
