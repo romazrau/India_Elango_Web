@@ -4,7 +4,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .wrapper_text{
@@ -27,7 +27,7 @@
 .wrapper_img{
     flex-basis: 1;
     flex-shrink:1;
-    max-width: 55%;
+    max-width: 50%;
 }
 
 .wrapper_button:hover{

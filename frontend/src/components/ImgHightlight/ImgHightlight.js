@@ -8,12 +8,12 @@ export default ({ srcRequire, text }) => {
     <div style={{ marginTop: "5vh" }}>
       <Card
         className="bg-dark text-white"
-        style={{ borderWidth: "0", borderRadius: "0"}}
+        style={{ borderWidth: "0", borderRadius: "0",maxHeight:"56.25vw"}}
       >
         <Card.Img
           src={srcRequire}
           alt="Card image"
-          style={{ opacity: "0.5" ,maxHeight:"90%"}}
+          style={{ opacity: "0.5",maxHeight:"56.25vw" }}
         />
         <Card.ImgOverlay className={styles.wrapper}>
           <p className={styles.wrapper_text}>{text}</p>
