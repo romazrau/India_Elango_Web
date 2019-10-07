@@ -4,10 +4,11 @@ import { CardDeck } from "react-bootstrap"; //, NavDropdown
 import NewsCard from "../../components/NewsCard/NewsCard";
 import classes from "./NewsCardGroup.module.css";
 
+//新聞陣列分別輸入src/img下的圖片名稱、要開啟的URL、新聞短述
 class NewsCardGroup extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { //  "新聞的照片(放在img裡的名稱) + 跳轉URL  + 介紹 " *3
+    this.state = { //  "{新聞的照片(放在img裡的名稱) + 跳轉URL  + 介紹 "} *N個
       news: [
         [
           "bear.jpg",
@@ -30,7 +31,7 @@ class NewsCardGroup extends React.Component {
 
   newsCardClick = url => {
     console.log("newsCard clicked. URL is " + url)
-    window.location.href=url;
+    window.open(url);
     // this.props.history.push("#info");
   };
 

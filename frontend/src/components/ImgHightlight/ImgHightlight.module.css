@@ -1,0 +1,35 @@
+.wrapper{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center
+}
+
+.wrapper_text{
+    flex-basis: 1;
+    max-width: 35%;
+    font-size: 5.5vmin;
+}
+
+.wrapper_button{
+    flex-basis: 1;
+    max-width: 2%;
+    height: 20vmin;
+    padding: 0px;
+    margin-left: 4%;
+    margin-right: 4%;
+    border-width: 0%;
+    cursor: default;
+}
+
+.wrapper_img{
+    flex-basis: 1;
+    flex-shrink:1;
+    max-width: 55%;
+}
+
+.wrapper_button:hover{
+    cursor: default;
+}
