@@ -1,0 +1,22 @@
+.wrapper {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.wrapper_list {
+  flex-basis: 1;
+  max-width: 35%;
+  font-size: 5.5vmin;
+}
+
+.wrapper_post {
+  flex-basis: 1;
+  flex-shrink: 1;
+  max-width: 50%;
+}
