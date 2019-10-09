@@ -13,7 +13,7 @@
 }
 
 .wrapper_list {
-  padding-top: 41px;
+  padding-top: 24px;
   padding-left: 5vmin;
   flex-basis: 1;
   max-width: 35%;
@@ -24,13 +24,20 @@
   max-width: 65%;
 }
 
+.link_div{
+  margin-top: 20px;
+}
+
 .navlink{
-    margin-bottom: 3vmin;
     color: rgba(0, 0, 0, 0.5);
 }
 
 .navlink:hover{
     color: rgb(0, 0, 0);
     text-decoration:none;
-    margin-left: 1vmin;
+}
+
+.link_p{
+  margin-bottom: 0.1vh;
+  font-size: 14px;
 }

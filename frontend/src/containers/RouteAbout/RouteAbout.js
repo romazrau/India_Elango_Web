@@ -16,6 +16,7 @@ class ConnectedRouteAbout extends React.Component {
         component={() => (
           <Pagination
             srcRequire={require("../../img/" + e.img)}
+            route="about"
             title={e.title}
             post={e.post}
             titleList={this.props.articles.about.map(e => ({

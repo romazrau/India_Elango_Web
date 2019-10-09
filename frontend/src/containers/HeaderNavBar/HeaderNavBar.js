@@ -2,8 +2,13 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap"; //, NavDropdown
 import styles from "./HeaderNavBar.module.css";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
-class HeaderNavBar extends React.Component {
+
+const mapStateToProps = state => {
+  return { articles: state.articles };
+};
+class ConnectedHeaderNavBar extends React.Component {
   render() {
     return (
       <div>
@@ -134,4 +139,5 @@ class HeaderNavBar extends React.Component {
     );
   }
 }
+const HeaderNavBar = connect(mapStateToProps)(ConnectedHeaderNavBar); //
 export default HeaderNavBar;

@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 import styles from "./Pagination.module.css";
 
-export default ({ srcRequire, title, post, titleList }) => {
+export default ({ srcRequire, title, post, titleList, route }) => {
   return (
     <div>
       <Image src={srcRequire} fluid style={{ width: "100%" }} />
@@ -19,18 +19,25 @@ export default ({ srcRequire, title, post, titleList }) => {
           <div className={styles.wrapper}>
             <div className={styles.wrapper_list}>
               {titleList.map(e => (
-                <div key={e.title}>
+                <div key={e.title} className={styles.link_div}>
                   <NavLink
-                    to={"/about/" + e.title}
+                    to={"/"+route+"/" + e.title}
                     activeStyle={{ color: "#4CAF50" }}
                     className={styles.navlink}
                   >
-                    <h6>
-                      <b>{e.title}</b>
-                    </h6>
+                    <b>{e.title}</b>
                   </NavLink>
                   {e.subtitleList.length
-                    ? e.subtitleList.map(e => <p key={e.id}>&nbsp;{e.subtitle}</p>)
+                    ? e.subtitleList.map(ele => (
+                        <p key={ele.id} className={styles.link_p}>
+                          <a
+                            className={styles.navlink}
+                            href={"/"+route+"/" + e.title + "#" + ele.id}
+                          >
+                            {ele.subtitle}
+                          </a>
+                        </p>
+                      ))
                     : ""}
                 </div>
               ))}

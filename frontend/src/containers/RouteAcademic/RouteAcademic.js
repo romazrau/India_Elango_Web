@@ -21,7 +21,7 @@ class ConnectedRouteAcademic extends React.Component {
   render() {
     return (
       <div>
-        <h2>Academic</h2>
+        <h2>Academic **redux測試</h2>
         <ul className="list-group list-group-flush">
           {Object.keys(this.props.articles).map(el => (
             <li className="list-group-item" key={el}>
