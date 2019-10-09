@@ -1,0 +1,1 @@
+export const DELETE_ALL = "DELETE_ALL";

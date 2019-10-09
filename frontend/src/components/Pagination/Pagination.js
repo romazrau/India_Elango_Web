@@ -4,28 +4,40 @@ import { NavLink } from "react-router-dom";
 
 import styles from "./Pagination.module.css";
 
-export default ({ srcRequire, title, post, postList }) => {
+export default ({ srcRequire, title, post, titleList }) => {
   return (
-    <div >
+    <div>
       <Image src={srcRequire} fluid style={{ width: "100%" }} />
-      <Card style={{backgroundColor:"rgb(245, 245, 245)",borderWidth: "0", borderRadius: "0"}}>
+      <Card
+        style={{
+          backgroundColor: "rgb(245, 245, 245)",
+          borderWidth: "0",
+          borderRadius: "0"
+        }}
+      >
         <Card.Body>
           <div className={styles.wrapper}>
             <div className={styles.wrapper_list}>
-              {postList.map(e => (
-                <NavLink
-                  key={e}
-                  to={"/about/" + e}
-                  activeStyle={{ color: "#4CAF50" }}
-                  className={styles.navlink}
-                >
-                  <h6><b>{e}</b></h6>
-                </NavLink>
+              {titleList.map(e => (
+                <div key={e.title}>
+                  <NavLink
+                    to={"/about/" + e.title}
+                    activeStyle={{ color: "#4CAF50" }}
+                    className={styles.navlink}
+                  >
+                    <h6>
+                      <b>{e.title}</b>
+                    </h6>
+                  </NavLink>
+                  {e.subtitleList.length
+                    ? e.subtitleList.map(e => <p key={e.id}>&nbsp;{e.subtitle}</p>)
+                    : ""}
+                </div>
               ))}
             </div>
             <div className={styles.wrapper_post}>
               <h3>{title}</h3>
-              <div>{post}</div>
+              <div dangerouslySetInnerHTML={{ __html: post }}></div>
             </div>
           </div>
         </Card.Body>
