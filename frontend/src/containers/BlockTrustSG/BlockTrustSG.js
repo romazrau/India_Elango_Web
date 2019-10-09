@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 class BlockTrustSG extends React.Component{
   render(){
     return(
-      <section classNmae={styles.wrapperstyle1}>
+      <section className={styles.wrapperstyle1}>
           {/*2 Columns*/}
 
           <div className={styles.flex}>

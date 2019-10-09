@@ -3,20 +3,34 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  justify-content: space-around;
+  align-items: start;
+  margin: -30vh 10vw 10vh 10vw;
+  background-color: rgb(255, 255, 255);
+  padding: 10vh 0 10vh 0;
+  z-index: 99;
+  
 }
 
 .wrapper_list {
+  padding-top: 41px;
+  padding-left: 5vmin;
   flex-basis: 1;
   max-width: 35%;
-  font-size: 5.5vmin;
 }
 
 .wrapper_post {
-  flex-basis: 1;
-  flex-shrink: 1;
-  max-width: 50%;
+  flex-basis: 2;
+  max-width: 65%;
+}
+
+.navlink{
+    margin-bottom: 3vmin;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.navlink:hover{
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+    margin-left: 1vmin;
 }
