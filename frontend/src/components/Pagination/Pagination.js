@@ -15,7 +15,7 @@ export default ({ srcRequire, title, post, titleList, route }) => {
           borderRadius: "0"
         }}
       >
-        <Card.Body>
+        <Card.Body style={{padding:"0 0 0 0"}}>
           <div className={styles.wrapper}>
             <div className={styles.wrapper_list}>
               {titleList.map(e => (
@@ -29,9 +29,9 @@ export default ({ srcRequire, title, post, titleList, route }) => {
                   </NavLink>
                   {e.subtitleList.length
                     ? e.subtitleList.map(ele => (
-                        <p key={ele.id} className={styles.link_p}>
+                        <p key={ele.id} style={{marginBottom:"0.1vh"}}>
                           <a
-                            className={styles.navlink}
+                            className={styles.link_p}
                             href={"/"+route+"/" + e.title + "#" + ele.id}
                           >
                             {ele.subtitle}

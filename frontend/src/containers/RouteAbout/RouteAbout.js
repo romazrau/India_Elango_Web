@@ -9,17 +9,17 @@ const mapStateToProps = state => {
 };
 class ConnectedRouteAbout extends React.Component {
   render() {
-    const display = this.props.articles.about.map(e => (
+    const display = this.props.articles.About.map(e => (
       <Route
         key={e}
-        path={"/about/" + e.title}
+        path={"/About/" + e.title}
         component={() => (
           <Pagination
             srcRequire={require("../../img/" + e.img)}
-            route="about"
+            route="About"
             title={e.title}
             post={e.post}
-            titleList={this.props.articles.about.map(e => ({
+            titleList={this.props.articles.About.map(e => ({
               title: e.title,
               subtitleList: e.subtitleList
             }))}
@@ -33,8 +33,8 @@ class ConnectedRouteAbout extends React.Component {
         <Switch>
           {display}
           <Redirect
-            from="/about/"
-            to={"/about/" + this.props.articles.about[0].title}
+            from="/About/"
+            to={"/About/" + this.props.articles.About[0].title}
           />
           <Route render={() => <div>尚未開放功能</div>} />
         </Switch>

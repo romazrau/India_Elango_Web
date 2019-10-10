@@ -7,7 +7,7 @@ export default ({srcRequire , text,onclick})=>{
     return (
         <Card href="#52" onClick={onclick}>
           <Card.Img variant="top" src={srcRequire} />
-          <Card.Body style={{ backgroundColor:"rgb(204, 204, 204)"}}>
+          <Card.Body style={{ backgroundColor:"#f2f2f2"}}>
             <Card.Text>
               {text}
             </Card.Text>

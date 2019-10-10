@@ -4,12 +4,37 @@ import styles from "./HeaderNavBar.module.css";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-
 const mapStateToProps = state => {
   return { articles: state.articles };
 };
 class ConnectedHeaderNavBar extends React.Component {
   render() {
+    const NavlinkArticlesdisplay = Object.keys(this.props.articles).map(
+      e=>(
+        <div className={styles.dropdown} key={e}>
+          <Link to={"/"+e}>
+            <button
+              className="btn btn-outline-success"
+              style={{ borderColor: "rgba(0, 0, 0,0)" }}
+            >
+              <b>{e}</b>
+            </button>
+          </Link>
+          <div className={styles.dropdown_content}>
+          {this.props.articles[e].map(ele => (
+            <a className="dropdown-item" href={"/"+e+"/"+ele.title} key={ele.title}>
+              {ele.title}
+            </a>
+          ))}
+          </div>
+        </div>
+      )
+    )
+    
+    
+    
+    
+
     return (
       <div>
         <Navbar
@@ -22,50 +47,9 @@ class ConnectedHeaderNavBar extends React.Component {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto" style={{justifyContent: "flex-end"}}>
-              <div className={styles.dropdown}>
-                <Link to="/About">
-                  <button
-                    className="btn btn-outline-success"
-                    style={{ borderColor: "rgba(0, 0, 0,0)" }}
-                  >
-                    <b>About</b>
-                  </button>
-                </Link>
-                <div className={styles.dropdown_content}>
-                  <a className="dropdown-item" href="#1">
-                    Action
-                  </a>
-                  <a className="dropdown-item" href="#2">
-                    Another action
-                  </a>
-                  <a className="dropdown-item" href="#3">
-                    Something else here
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.dropdown}>
-                <Link to="/Introduction">
-                  <button
-                    className="btn btn-outline-success"
-                    style={{ borderColor: "rgba(0, 0, 0,0)" }}
-                  >
-                    <b>Introduction</b>
-                  </button>
-                </Link>
-                <div className={styles.dropdown_content}>
-                  <a className="dropdown-item" href="#4">
-                    Action
-                  </a>
-                  <a className="dropdown-item" href="#5">
-                    Another action
-                  </a>
-                  <a className="dropdown-item" href="#6">
-                    Something else here
-                  </a>
-                </div>
-              </div>
+            <Nav className="mr-auto" style={{ justifyContent: "flex-end" }}>
+              
+              {NavlinkArticlesdisplay}
 
               <div className={styles.dropdown}>
                 <Link to="/Academic">

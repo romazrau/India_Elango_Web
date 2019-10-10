@@ -5,11 +5,10 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: flex-start;
-  margin: -30vh 10vw 10vh 10vw;
+  margin: -30vmin 10vw 10vh 10vw;
   background-color: rgb(255, 255, 255);
   padding: 10vh 0 10vh 0;
   z-index: 99;
-  
 }
 
 .wrapper_list {
@@ -22,22 +21,53 @@
 .wrapper_post {
   flex-basis: 2;
   max-width: 65%;
+  padding-left: 1vmin;
+  padding-right: 5vmin;
 }
 
-.link_div{
+.wrapper_post img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 50vh;
+  margin:auto;
+  display:block;
+}
+
+.wrapper_post h6 {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.navlink {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 3vmin;
+}
+
+.navlink:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.link_div {
   margin-top: 20px;
 }
 
-.navlink{
-    color: rgba(0, 0, 0, 0.5);
+.link_p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 2.5vmin;
 }
 
-.navlink:hover{
-    color: rgb(0, 0, 0);
-    text-decoration:none;
+.link_p:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
-.link_p{
-  margin-bottom: 0.1vh;
-  font-size: 14px;
+
+@media (max-width: 767px)
+{
+  .wrapper {
+    margin: -30vmin 0vw 10vh 0vw;
+  }
 }
+

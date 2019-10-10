@@ -46,6 +46,8 @@ class NewsCardGroup extends React.Component {
     ));
     return (
       <div className={classes.cardDeck}>
+        <h2>News</h2>
+        <p>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
         <CardDeck>{display}</CardDeck>
       </div>
     );
