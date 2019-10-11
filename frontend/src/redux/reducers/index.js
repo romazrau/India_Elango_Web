@@ -180,7 +180,7 @@ const initialState = {
         post: "55554444444444444444444444455555555555555555555555555555555"
       }
     ],
-    "Panchayat_Academy": [
+    "Panchayat Academy": [
       {
         title: "第一篇標題2",
         img: "BlockAboutElango.jpg",

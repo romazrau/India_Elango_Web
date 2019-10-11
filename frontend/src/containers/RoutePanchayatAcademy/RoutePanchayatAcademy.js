@@ -7,19 +7,21 @@ import Pagination from "../../components/Pagination/Pagination";
 const mapStateToProps = state => {
   return { articles: state.articles };
 };
-class ConnectedRouteIntroduction extends React.Component {
+class ConnectedRoutePanchayatAcademy extends React.Component {
   render() {
-    const display = this.props.articles.Introduction.map(e => (
+    const routePath =Object.keys(this.props.articles)[2]
+
+    const display = this.props.articles[routePath].map(e => (
       <Route
         key={e}
-        path={"/Introduction/" + e.title}
+        path={"/"+routePath+"/" + e.title}
         component={() => (
           <Pagination
             srcRequire={require("../../img/" + e.img)}
-            route="Introduction"
+            route={routePath}
             title={e.title}
             post={e.post}
-            titleList={this.props.articles.Introduction.map(e => ({
+            titleList={this.props.articles[routePath].map(e => ({
               title: e.title,
               subtitleList: e.subtitleList
             }))}
@@ -33,8 +35,8 @@ class ConnectedRouteIntroduction extends React.Component {
         <Switch>
           {display}
           <Redirect
-            from="/Introduction/"
-            to={"/Introduction/" + this.props.articles.Introduction[0].title}
+            from={"/"+routePath+"/"}
+            to={"/"+routePath+"/" + this.props.articles[routePath][0].title}
           />
           <Route render={() => <div>尚未開放功能</div>} />
         </Switch>
@@ -43,5 +45,5 @@ class ConnectedRouteIntroduction extends React.Component {
   }
 }
 
-const RouteIntroduction = connect(mapStateToProps)(ConnectedRouteIntroduction); //
-export default RouteIntroduction;
+const RoutePanchayatAcademy = connect(mapStateToProps)(ConnectedRoutePanchayatAcademy); //
+export default RoutePanchayatAcademy;
