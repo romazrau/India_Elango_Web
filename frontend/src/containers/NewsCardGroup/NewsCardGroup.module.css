@@ -2,8 +2,17 @@
     /* display: flex; */
     overflow: hidden;
     padding: 5vh 3vw 5vh 3vw;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+
+@media (max-width: 1200px)
+{
+    .cardDeck {
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
 }
 
 

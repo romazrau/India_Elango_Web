@@ -100,7 +100,30 @@ const initialState = {
         post: '<h2 style={{fontSize:"5px"}}>易解：父母呼喚，應及時回答，不要慢吞吞的很久才應答父母有事交代，要立刻動身去做，不可拖延或推辭偷懶。父母教導我們做人處事的道理，是為了我們好， 應該恭敬的聆聽。做錯了事，父母責備教誡時，應當虛心接受，不可強詞奪理，使父母親生氣、傷心。</h2>'
       }
     ]
-  }
+  },
+  news:[  //  "{新聞的照片(放在img裡的名稱) + 跳轉URL  + 介紹 "} *N個
+    {
+      img:"bear.jpg",
+      url:"#50",
+      date:"30-03-2019",
+      title:"我是誰2",
+      text:"This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+    },
+    {
+      img:"imghightlight.jpg",
+      url:"#60",
+      date:"30-04-2019",
+      title:"我是誰",
+      text:"This card has supporting text below as a natural lead-in to additional content."
+    },
+    {
+      img:"bear.jpg",
+      url:"https://www.facebook.com/",
+      date:"30-05-2019",
+      title:"This card has supporting text below as a natural lead-in to additional content.",
+      text:"This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action."
+    }
+  ]
 };
 function rootReducer(state = initialState, action) {
   if (action.type === DELETE_ALL) {

@@ -10,7 +10,8 @@
 .wrapper_text{
     flex-basis: 1;
     max-width: 35%;
-    font-size: 5.5vmin;
+    max-height: 80%;
+    font-size: 5vmin;
 }
 
 .wrapper_button{

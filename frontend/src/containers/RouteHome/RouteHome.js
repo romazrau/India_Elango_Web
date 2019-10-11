@@ -1,7 +1,6 @@
 import React from "react";
 
 import NewsCardGroup from "../NewsCardGroup/NewsCardGroup";
-// import HomeCarousels from "../../containers/HomeCarousels/HomeCarousels";
 import Jumbo from "../Jumbotron/Jumbotron";
 import ImgHightlight from "../../components/ImgHightlight/ImgHightlight"
 import BlockAboutElango from "../BlockAboutElango/BlockAboutElango"
@@ -13,7 +12,6 @@ class RouteHome extends React.Component {
     return (
         <div>
         <Jumbo />
-        {/* <HomeCarousels></HomeCarousels> */}
         <BlockAboutElango></BlockAboutElango>
         <NewsCardGroup></NewsCardGroup>
         <BlockTrustSG></BlockTrustSG>
