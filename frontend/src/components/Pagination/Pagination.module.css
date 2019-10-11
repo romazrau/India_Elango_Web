@@ -15,13 +15,13 @@
   padding-top: 24px;
   padding-left: 5vmin;
   flex-basis: 1;
-  max-width: 35%;
+  max-width: 30%;
 }
 
 .wrapper_post {
   flex-basis: 2;
   max-width: 65%;
-  padding-left: 1vmin;
+  padding-left: 3vmin;
   padding-right: 5vmin;
 }
 
@@ -29,7 +29,7 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 50vh;
+  max-height: 35vh;
   margin:auto;
   display:block;
 }
@@ -38,6 +38,16 @@
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
   font-size: 0.8em;
+}
+
+.wrapper_post table {
+  border-collapse: collapse;
+  max-width: 100%;
+  font-size: 0.8em;
+}
+
+.wrapper_post table, td, th {
+  border: 1px solid black;
 }
 
 .navlink {

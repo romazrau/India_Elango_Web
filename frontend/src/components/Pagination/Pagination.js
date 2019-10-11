@@ -29,7 +29,7 @@ export default ({ srcRequire, title, post, titleList, route }) => {
                   </NavLink>
                   {e.subtitleList.length
                     ? e.subtitleList.map(ele => (
-                        <p key={ele.id} style={{marginBottom:"0.1vh"}}>
+                        <p key={ele.id} style={{marginBottom:"0.1vh",marginTop:"0.1vh"}}>
                           <a
                             className={styles.link_p}
                             href={"/"+route+"/" + e.title + "#" + ele.id}
@@ -43,7 +43,7 @@ export default ({ srcRequire, title, post, titleList, route }) => {
               ))}
             </div>
             <div className={styles.wrapper_post}>
-              <h3>{title}</h3>
+              <h3 style={{marginBottom:"0.5em"}}>{title}</h3>
               <div dangerouslySetInnerHTML={{ __html: post }}></div>
             </div>
           </div>

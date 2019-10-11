@@ -12,6 +12,7 @@ class RouteHome extends React.Component {
     return (
         <div>
         <Jumbo />
+        <img src={require("../../img/aboutDrElangowithagirl.jpg")} alt="測試用圖片"/>
         <BlockAboutElango></BlockAboutElango>
         <NewsCardGroup></NewsCardGroup>
         <BlockTrustSG></BlockTrustSG>
