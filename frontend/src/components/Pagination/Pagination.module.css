@@ -51,8 +51,9 @@
 }
 
 .navlink {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.8);
   font-size: 3vmin;
+  line-height: 0.5vmin;
 }
 
 .navlink:hover {
@@ -61,7 +62,7 @@
 }
 
 .link_div {
-  margin-top: 20px;
+  margin-top: 2.5em;
 }
 
 .link_p {
