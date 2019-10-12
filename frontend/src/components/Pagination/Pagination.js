@@ -29,7 +29,7 @@ export default ({ srcRequire, title, post, titleList, route }) => {
                   </NavLink>
                   {e.subtitleList.length
                     ? e.subtitleList.map(ele => (
-                        <p key={ele.id} style={{marginBottom:"0.1vh",marginTop:"0.1vh"}}>
+                        <p key={ele.id} style={{marginBottom:"0.1vh",marginTop:"1.5vh"}}>
                           <a
                             className={styles.link_p}
                             href={"/"+route+"/" + e.title + "#" + ele.id}

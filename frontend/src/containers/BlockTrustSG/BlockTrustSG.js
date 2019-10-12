@@ -12,8 +12,8 @@ class BlockTrustSG extends React.Component{
           <div className={styles.flex}>
 
             <div className={styles.innerleft}>
-              <h3>Trust of Self-Governance</h3>
-              <p>The Model of Local Self-Governance <br /> “Small , Beautiful, Self-Governing and Sustainable Village ”</p>
+              <h3>About Dr. Elango</h3>
+              <p>“The warmth and glow of development should be felt <br /> by the common man and the poor”	---Dr. Elango</p>
               <Link to="/Introduction">
                 <Button variant="primary">Read more</Button>
               </Link>

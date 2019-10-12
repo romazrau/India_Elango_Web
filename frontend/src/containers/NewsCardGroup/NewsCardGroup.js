@@ -3,7 +3,7 @@ import { CardDeck } from "react-bootstrap"; //, NavDropdown
 import { connect } from "react-redux";
 
 import NewsCard from "../../components/NewsCard/NewsCard";
-import styles from "./NewsCardGroup.module.css";
+import classes from "./NewsCardGroup.module.css";
 
 const mapStateToProps = state => {
   return { news: state.news };
@@ -28,11 +28,9 @@ class ConnectedNewsCardGroup extends React.Component {
       ></NewsCard>
     ));
     return (
-      <div className={styles.cardDeck}>
-        <div className={styles.titleTextbox}>
-          <h2>News</h2>
-          <p>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-        </div>
+      <div className={classes.cardDeck}>
+        <h2>News</h2>
+        <p>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
         <CardDeck>{display}</CardDeck>
       </div>
     );

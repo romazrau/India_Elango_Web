@@ -15,9 +15,7 @@ export default ({srcRequire , text,onclick,title,date})=>{
               <hr style={{margin:"8px 0"}}/>
             </Card.Title>
             <Card.Text>
-              <small>
-                {text}
-              </small>
+              {text}
             </Card.Text>
           </Card.Body>
           <Card.Footer className={styles.cardFoooter} style={{ height:"1.5em" , padding:"0 0 0 0" ,borderWidth:"0",backgroundColor:"#f2f2f2"}}>
@@ -28,3 +26,4 @@ export default ({srcRequire , text,onclick,title,date})=>{
         </Card>
     )
 }
+

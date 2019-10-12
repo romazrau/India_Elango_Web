@@ -10,8 +10,7 @@
 
 .cardBody {
   background-color: #f2f2f2;
-  max-height: 80vh;
-  min-height: 30vh;
+  min-height: 46vh;
   text-align: left;
 }
 
