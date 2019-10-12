@@ -30,11 +30,15 @@ class ConnectedHeaderNavBar extends React.Component {
         </div>
       )
     )
-    
+
+
+
+
+
     return (
       <div>
         <Navbar
-          style={{ backgroundColor: "rgb(255,235,132)" }}
+          style={{ backgroundColor: "rgb(255,235,132)",width:"100vw"}}
           variant="light"
           expand="lg"
         >
@@ -43,8 +47,8 @@ class ConnectedHeaderNavBar extends React.Component {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto" style={{ justifyContent: "flex-end" ,alignItems:"center"}}>
-              
+            <Nav className="mr-auto" style={{ justifyContent: "flex-end" }}>
+
               {NavlinkArticlesdisplay}
 
               <div className={styles.dropdown}>

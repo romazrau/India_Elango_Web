@@ -15,7 +15,8 @@ class BlockAboutElango extends React.Component{
 
             <div className={styles.innerright}>
               <h3>About Dr. Elango</h3>
-              <p>“The warmth and glow of development should be felt <br /> by the common man and the poor”	---Dr. Elango</p>
+              <p>The Story of a Dalit Leader who makes his village sustainable try to fight for poor and make the village thrive.
+“The warmth and glow of development should be felt <br /> by the common man and the poor”	---Dr. Elango</p>
               <Link to="/About">
                 <Button variant="primary">Read more</Button>
               </Link>

@@ -5,30 +5,35 @@ import { connect } from "react-redux";
 import "./App.css";
 import HeaderNavBar from "./containers/HeaderNavBar/HeaderNavBar";
 import RouteHome from "./containers/RouteHome/RouteHome";
+import RouteAbout from "./containers/RouteAbout/RouteAbout"
+import RoutePhilosophyandPractice from "./containers/RoutePhilosophyandPractice/RoutePhilosophyandPractice"
+import RoutePanchayatAcademy from "./containers/RoutePanchayatAcademy/RoutePanchayatAcademy"
 import RouteAcademic from "./containers/RouteAcademic/RouteAcademic"
 import RouteSDGs from "./containers/RouteSDGs/RouteSDGs"
 import RouteContactDonate from "./containers/RouteContactDonate/RouteContactDonate"
-import RouteArticles from "./containers/RouteArticles/RouteArticles"
+import Footer from "./containers/Footer/Footer"
+//RouteIntroduction  RouteAcademic  RouteSDGs RouteContactDonate
+
 
 const mapStateToProps = state => {
   return { articles: state.articles };
 };
 class ConnectedRouteApp extends React.Component {
+
   render() {
-    const displayRouteArticles = Object.keys(this.props.articles).map(e => (
-      <Route path={"/" + e} key={e} component={() => <RouteArticles routePath={e} />} />
-    ));
-    
+
     console.log()
     return (
       <div>
         <BrowserRouter>
           <div className="App">
             <HeaderNavBar></HeaderNavBar>
-           
+
             <Switch>
               <Route exact path="/" component={RouteHome} />
-              {displayRouteArticles}
+              <Route path="/about" component={RouteAbout} />
+              <Route path="/Philosophy&Practice" component={RoutePhilosophyandPractice} />
+              <Route path={"/"+Object.keys(this.props.articles)[2]} component={RoutePanchayatAcademy} />
               <Route path="/academic" component={RouteAcademic} />
               <Route path="/SDGs" component={RouteSDGs} />
               <Route path="/Contact&Donate" component={RouteContactDonate} />
@@ -36,6 +41,7 @@ class ConnectedRouteApp extends React.Component {
               <Route render={() => <div>尚未開放功能(路由錯誤)</div>} />
             </Switch>
           </div>
+          <Footer></Footer>
         </BrowserRouter>
       </div>
     );
@@ -43,4 +49,3 @@ class ConnectedRouteApp extends React.Component {
 }
 const App = connect(mapStateToProps)(ConnectedRouteApp); //
 export default App;
-

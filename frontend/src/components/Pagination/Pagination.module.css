@@ -5,7 +5,7 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: flex-start;
-  margin: -25vw 10vw 10vh 10vw;
+  margin: -30vmin 10vw 10vh 10vw;
   background-color: rgb(255, 255, 255);
   padding: 10vh 0 10vh 0;
   z-index: 99;
@@ -29,13 +29,13 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 38vh;
+  max-height: 35vh;
   margin:auto;
   display:block;
 }
 
 .wrapper_post h6 {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.5);
   text-align: center;
   font-size: 0.8em;
 }
@@ -46,19 +46,13 @@
   font-size: 0.8em;
 }
 
-.wrapper_post table ol {
-  padding: 0 2em;
-  margin: 0 0;
-}
-
 .wrapper_post table, td, th {
   border: 1px solid black;
 }
 
 .navlink {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 3vmin;
-  line-height: 0.5vmin;
 }
 
 .navlink:hover {
@@ -67,7 +61,7 @@
 }
 
 .link_div {
-  margin-top: 2.5em;
+  margin-top: 20px;
 }
 
 .link_p {
