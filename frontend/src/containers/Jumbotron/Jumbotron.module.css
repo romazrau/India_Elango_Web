@@ -1,7 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Satisfy|Special+Elite|Volkhov&display=swap');
+
 .jumbotron {
   background-image: url(../../img/Cover.JPG);
+  background-attachment: fixed;
   background-size: cover;
-  height: 600px;
+  height: 90vh;
   opacity: 1;
   color: white;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(34,33,33,0.4);
+}
+
+.title{
+  font-weight: bold;
+  font-family: 'Volkhov', serif;
+  color: #FFCC00;
+}
+
+.video {
+  border-style: solid;
+  border-color: #FFCC00;
+  width:40vw;
+  height:22.5vw;
 }

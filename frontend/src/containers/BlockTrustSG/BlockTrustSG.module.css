@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Satisfy|Special+Elite|Volkhov&display=swap');
+
 .wrapperstyle1{
     background-color:#fafafa;
     color: #999999;
   }
-  
+
   .flex{
     background-color: #f2f2f2;
     display: flex;
@@ -11,14 +13,21 @@
     align-items: center;
     justify-content: center;
   }
-  
-  
+
+
   .innerleft{
     display: flex;
     flex-direction: column;
     width:40vw;
+    font-family: 'Volkhov', serif;
+    color: black;
   }
-  
+
+  .innerleft h3{
+    color: #0069D9;
+    font-weight: bold;
+  }
+
   .innerright{
     display: flex;
     padding: 0;

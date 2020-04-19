@@ -5,6 +5,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    background-attachment: fixed;
 }
 
 .wrapper_text{

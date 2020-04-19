@@ -9,7 +9,7 @@ articles: {
           { subtitle: "第一個小標", id: "a1b2c3" },
           { subtitle: "第二個小標", id: "a1b2c5" }
         ],
-        post: 
+        post:
         "<h5 id='a1b2c3'>第一個小標</h5>" +
         "<p>&emsp;&emsp;示範內文</p>"+
         "<p>&emsp;&emsp;</p>"+
@@ -331,18 +331,15 @@ const initialState = {
     ],
     "Panchayat Academy": [
       {
-        title: "Panchayat Academy",
+        title: "Introduction",
         img: "BlockAboutElango.jpg",
-        subtitleList: [
-          { subtitle: "Introduction", id: "PanchayatAcademy0101" }
-        ],
+        subtitleList: [],
         post:
-          "<h5 id='PanchayatAcademy0101'>Introduction</h5>"+
           "<p>&emsp;&emsp;By making Kuthambakkam a model panchayat, it became a learning centre for other panchayats. In this way 25 – 30 panchayat presidents from other villages have been trained every month in the panchayat academy. The training covers the developmental model of Kuthambakkam, hands on working with the ongoing projects, rights and duties of the panchayats, constitutional powers and commitments, 29 subjects given for panchayats, planning at the panchayat level, disaster management training, rural industries and knowledge on local bodies in other countries. Likewise, trainings are given for the youth leaders and women leaders.</p>" +
           "<p>&emsp;&emsp;</p>" +
           "<p>&emsp;&emsp;</p>" +
           "<p>&emsp;&emsp;</p>" +
-          "<p>&emsp;&emsp;</p>" 
+          "<p>&emsp;&emsp;</p>"
       },
       {
         title: "Coming soon",
@@ -363,34 +360,57 @@ const initialState = {
           "<p>&emsp;&emsp;</p>" +
           "<p>&emsp;&emsp;</p>"
       }
+    ],
+    SDGs: [
+      {
+        title: "Introduction",
+        img: "BlockAboutElango.jpg",
+        subtitleList: [
+          { subtitle: "SDGs", id: "SDGs0101" },
+          { subtitle: "What are SDGs?", id: "SDGs0102" },
+          { subtitle: "SDGs Tracker in Kuthambakkam", id: "SDGs0103" }
+        ],
+        post:
+          "<h5 id='SDGs0101'>SDGs</h5>" +
+          "<p>&emsp;&emsp;Dr. Elango is trying to evaluate and to track the village developing status with Sustainable Development Goals. In his office, there is a SDGs Tracker Board, Dr. Elango write down the indicators which are conducting this year to evaluate the development of the village by the board. In this way, they can easily know what they have already achieved and what they need to do for the next step. What’s more, this board also is a part of citizen participation to make people understand what is happening and sharing their ideas to the decision maker in the village. Thus, everyone can easily evaluate by this useful tool and gathering the power to focus on the needs</p>" +
+          "<p>&emsp;&emsp;</p>" +
+          "<h5 id='SDGs0102'>What are SDGs</h5>" +
+          "<p>&emsp;&emsp;The 2030 Agenda for Sustainable Development, adopted by all United Nations Member States in 2015, provides a shared blueprint for peace and prosperity for people and the planet, now and into the future. At its heart are the 17 Sustainable Development Goals (SDGs), which are an urgent call for action by all countries - developed and developing - in a global partnership. They recognize that ending poverty and other deprivations must go hand-in-hand with strategies that improve health and education, reduce inequality, and spur economic growth – all while tackling climate change and working to preserve our oceans and forests. The Sustainable Development Goals are the blueprint to achieve a better and more sustainable future for all. They address the global challenges we face, including those related to poverty, inequality, climate, environmental degradation, prosperity, and peace and justice. The Goals interconnect and in order to leave no one behind, it is important that we achieve each Goal and target by 2030. Click on any specific Goal below to learn more about each issue. Read more:(https://www.un.org/sustainabledevelopment/sustainable-development-goals/)</p>" +
+          "<p>&emsp;&emsp;</p>" +
+          "<h5 id='SDGs0103'>SDGs Tracker in Kuthambakkam</h5>" +
+          "<p>&emsp;&emsp;Dr. Elango is trying to evaluate and to track the village developing status with Sustainable Development Goals. In his office, there is a SDGs Tracker Board, Dr. Elango write down the indicators which are conducting this year to evaluate the development of the village by the board. In this way, they can easily know what they have already achieved and what they need to do for the next step. What’s more, this board also is a part of citizen participation to make people understand what is happening and sharing their ideas to the decision maker in the village. Thus, everyone can easily evaluate by this useful tool and gathering the power to focus on the needs</p>"
+      }
     ]
   },
   news: [
     //  "{新聞的照片(放在img裡的名稱) + 跳轉URL  + 日期 + 標題 + 介紹 "} *N個
     {
-      img: "bear.jpg",
-      url: "#50",
-      date: "30-03-2019",
-      title: "我是誰2",
+      img: "newsYushanForumConnectingAsianSocieties.jpg",
+      url: "https://www.taef.org/doc/144",
+      date: "11/10/2018",
+      title: "2018 Yushan Forum : Connecting Asian Societies",
       text:
-        "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+        "How to make the village sustainable, relying on the self- governing power. We can build up sustainable economic networks to make the everyone have small business."
     },
     {
-      img: "imghightlight.jpg",
-      url: "#60",
-      date: "30-04-2019",
-      title: "我是誰",
-      text:
-        "This card has supporting text below as a natural lead-in to additional content."
-    },
-    {
-      img: "bear.jpg",
-      url: "https://www.facebook.com/",
-      date: "30-05-2019",
+      img: "newsIndialivesinvillagesElectionsarewonandlostwithruralvotes.jpg",
+      url:
+        "https://yourstory.com/2017/10/rangaswamy-elango-dalit-kuthambakkam-village-chennai",
+      date: "9/10/2018",
       title:
-        "This card has supporting text below as a natural lead-in to additional content.",
+        "India lives in villages. Elections are won and lost with rural votes",
       text:
-        "This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action."
+        "Most villages have no healthcare facilities,schools, roads,potable water, sewage disposal facilities..etc. Most panchayats are filled with corrupt members who pokcet the money released for developmental activities. In this scenario Rangawamy Elango stands out like a shining star, a beacon of hope."
+    },
+    {
+      img: "newsThestoryofaDalitleaderwhoquithisgovt.png",
+      url:
+        "http://www.jcycnepal.org.np/asian-ngos-international-development-conference-2018-conducted-9th-october-2018-taiwan/",
+      date: "18/10/2017",
+      title:
+        "The story of a Dalit leader who quit his govt job to end his village's illegal alcohol trade.",
+      text:
+        "When then Prime Minister Rajiv Gandhi was promoting the idea of 'Panchayati Raj' to empower villages, a young man in Kuthambakkam village, Tamil Nadu was sitting up and taking notice. Today, 57-year-old Rangaswamy Elango has turned his village into an inspiring habitat."
     }
   ]
 };

@@ -1,26 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Satisfy|Special+Elite|Volkhov&display=swap');
+
 .wrapperstyle1{
     background-color:#fafafa;
     color: #999999;
   }
-  
+
   .flex{
     background-color: #f2f2f2;
     display: flex;
-    height: 70vh;
-    width: auto;
+    height: 85vh;
+    width: 100vw;
     align-items: center;
     justify-content: center;
   }
-  
-  
+
+
   .innerleft{
     display: flex;
     padding: 0;
-    max-width: 40%;
+    width: 50%;
   }
-  
+
   .innerright{
     display: flex;
     flex-direction: column;
+    text-align: left;
+    padding-left: 5vw;
     width:40vw;
+    color: black;
+    font-family: 'Volkhov', serif;
+  }
+
+  .innerright h3{
+    color: #0069D9;
   }

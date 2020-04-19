@@ -30,11 +30,11 @@ class ConnectedHeaderNavBar extends React.Component {
         </div>
       )
     )
-    
+
     return (
       <div>
         <Navbar
-          style={{ backgroundColor: "rgb(255,235,132)" }}
+          style={{ backgroundColor: "rgb(255,235,132)",width:"100vw"}}
           variant="light"
           expand="lg"
         >
@@ -43,8 +43,8 @@ class ConnectedHeaderNavBar extends React.Component {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto" style={{ justifyContent: "flex-end" ,alignItems:"center"}}>
-              
+            <Nav className="mr-auto" style={{ justifyContent: "flex-end" }}>
+
               {NavlinkArticlesdisplay}
 
               <div className={styles.dropdown}>
@@ -53,10 +53,10 @@ class ConnectedHeaderNavBar extends React.Component {
                     className="btn btn-outline-success"
                     style={{ borderColor: "rgba(0, 0, 0,0)" }}
                   >
-                    <b>Academic</b>
+                    <b>Video Resource</b>
                   </button>
                 </Link>
-                <div className={styles.dropdown_content}>
+                {/* <div className={styles.dropdown_content}>
                   <a className="dropdown-item" href="#7">
                     Action
                   </a>
@@ -66,32 +66,10 @@ class ConnectedHeaderNavBar extends React.Component {
                   <a className="dropdown-item" href="#9">
                     Something else here
                   </a>
-                </div>
+                </div> */}
               </div>
 
-              <div className={styles.dropdown}>
-                <Link to="/SDGs">
-                  <button
-                    className="btn btn-outline-success"
-                    style={{ borderColor: "rgba(0, 0, 0,0)" }}
-                  >
-                    <b>SDGs</b>
-                  </button>
-                </Link>
-                <div className={styles.dropdown_content}>
-                  <a className="dropdown-item" href="#10">
-                    Action
-                  </a>
-                  <a className="dropdown-item" href="#11">
-                    Another action
-                  </a>
-                  <a className="dropdown-item" href="#12">
-                    Something else here
-                  </a>
-                </div>
-              </div>
-
-              <div className={styles.dropdown}>
+              {/* <div className={styles.dropdown}>
                 <Link to="/Contact&Donate">
                   <button
                     className="btn btn-outline-success"
@@ -111,7 +89,8 @@ class ConnectedHeaderNavBar extends React.Component {
                     Something else here
                   </a>
                 </div>
-              </div>
+              </div> */}
+
             </Nav>
           </Navbar.Collapse>
         </Navbar>

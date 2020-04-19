@@ -18,8 +18,6 @@ class Footer extends React.Component{
             <li><a href="#4" title="Whatsapp" className="fab fa-whatsapp fa-2x"></a></li>
           </ul>
         </div>
-        <div className>
-        </div>
       </footer>
     );
   }

@@ -14,8 +14,9 @@ class BlockAboutElango extends React.Component{
             <img  src={require("../../img/BlockAboutElango.jpg")} alt="" className={styles.innerleft}/>
 
             <div className={styles.innerright}>
-              <h3>About Dr. Elango</h3>
-              <p>“The warmth and glow of development should be felt <br /> by the common man and the poor”	---Dr. Elango</p>
+              <h3 style={{paddingBottom:"0.5rem",fontWeight:"bold"}}>About Dr. Elango</h3>
+              <p>“The warmth and glow of development should be felt by the common man and the poor”	---Dr. Elango <br/>
+The Story of a Dalit Leader who makes his village sustainable try to fight for poor and make the village thrive. </p>
               <Link to="/About">
                 <Button variant="primary">Read more</Button>
               </Link>
